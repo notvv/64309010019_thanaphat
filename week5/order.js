@@ -21,7 +21,7 @@ let order = [{
 //console.log(order[0].Item.length);
 for(i=0;i<order.length;i++){
 let sum =0;
-for(let j=0;j<order [i].Item.length;j++){
+for(let j=0;j<order [i].Item.length;j++){ 
     sum += order[i].Qty[j] * order[i].Price[j];
 }
 console.log(order[i].Customer,sum);
