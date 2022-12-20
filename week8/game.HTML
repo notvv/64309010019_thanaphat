@@ -32,8 +32,13 @@
             let Obj = JSON .parse(this.responseText);
             let temp = ''
             for(i=0;i<Obj.length;i++){
-                temp += '<thead><th>id</th><th>Group</th><th>Poster</th><th>Title</th><th>property</th><th>year</th>'+'<tr><td>'+Obj[i].id+'</td>'+'<td>'+Obj[i].Group+'</td>'+
-                '<td><img src ="img/'+Obj[i].Poster+'" width="150px"></td>'+'<td>'+Obj[i].Title+'</td>'+'<td>'+Obj[i].property+'</td>'+'<td>'+Obj[i].year+'</td>'
+                temp += '<thead><th>id</th><th>Group</th><th>Poster</th><th>Title</th><th>property</th><th>year</th>'+
+                  '<tr><td>'+Obj[i].id+'</td>'
+                    +'<td>'+Obj[i].Group+'</td>'
+                    +'<td><img src ="img/'+Obj[i].Poster+'" width="150px"></td>'
+                    +'<td>'+Obj[i].Title+'</td>'
+                    +'<td>'+Obj[i].property+'</td>'
+                    +'<td>'+Obj[i].year+'</td>'
                 '</tr>'
                 
             }
