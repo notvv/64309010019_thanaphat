@@ -32,13 +32,13 @@
     let obj;
     let i = 0;
     function getAjax() {
-      xhttp.open("GET", "http://localhost:3000/book");
+      xhttp.open("GET", "http://localhost:3000/game");
       xhttp.send();
       xhttp.onload = function () {
         //console.log(this.responseText);
         obj = JSON.parse(this.responseText);
         let temp = '';
-        temp = '<tr><td>' + obj[i].title + '</td></tr>';
+        temp = '<tr><td>' + obj[i].Title + '</td></tr>';
         document.getElementById('display').innerHTML = '<table>' + temp + '</table>';
       }
 
